@@ -1,0 +1,55 @@
+{
+    "manufacturer": "Gareth Gummow",
+    "keyboard_name": "Cluster IPS",
+    "maintainer": "gargum",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "url": "https://github.com/gargum/",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "rgblight": true,
+    },
+    "qmk": {
+        "locking": {
+            "enabled": true,
+            "resync": true
+        }
+    },
+    "matrix_pins": {
+        "cols": ["GP26"],
+        "rows": ["GP28"]
+    },
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0xF00D",
+        "vid": "0x0000",
+    },
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP16"
+    },
+    "rgblight": {
+        "led_count": 1,
+        "sleep": true,
+        "animations": {
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "static_gradient": true,
+            "rgb_test": true,
+            "alternating": true,
+            "twinkle": true
+        }
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0}
+            ]
+        }
+    }
+}
